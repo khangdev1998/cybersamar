@@ -1,0 +1,98 @@
+/* Responsive all screen laptop, table, mobile.... */
+@media only screen and (min-width: 1279px) {
+  .hero__banner {
+    max-width: 570px;
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .btn-gradient {
+    padding: 15px 20px;
+  }
+  .header__content {
+    padding-top: 15px;
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 9999999;
+    overflow-y: auto;
+    background-color: white;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.25s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .header__menu.active {
+    transform: translateX(0);
+  }
+  .header__menu,
+  .header__menu ul,
+  .header__bars,
+  .header__close {
+    display: block;
+  }
+  .header__close {
+    margin-left: auto;
+    margin-bottom: 6px;
+  }
+  .header__content ul li a {
+    padding: 20px;
+  }
+  .hero-main {
+    flex-direction: column;
+  }
+  .hero__content,
+  .hero__image {
+    width: 100%;
+  }
+  .hero__content .title h2 {
+    font-size: 60px;
+  }
+  .hero__article i {
+    --size-article: 28px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__logo img {
+    max-width: 85%;
+  }
+  .header__bars {
+    width: 36px;
+  }
+  .hero {
+    padding-top: 105px;
+  }
+  .hero__content ul {
+    margin-bottom: 15px;
+  }
+  .hero__content .title h2 {
+    font-size: 35px;
+  }
+  .hero__content .title p {
+    margin-bottom: 5px;
+  }
+  .hero__content .title p,
+  .hero__content li,
+  .hero__article p {
+    font-size: 16.8px;
+  }
+}
+
+.services,
+.about,
+.count,
+.features,
+.portfolio,
+.plan,
+.testimonial,
+.news,
+footer {
+  display: none;
+}
